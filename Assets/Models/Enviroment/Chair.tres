@@ -1,0 +1,14 @@
+[gd_resource type="StandardMaterial3D" load_steps=5 format=3 uid="uid://bunkta553e87g"]
+
+[ext_resource type="Texture2D" uid="uid://dxxsas7ylom4p" path="res://Textures/Textures Enviroment]/Chair/Chair_model_standardSurface1_BaseColor.png" id="1_6v28w"]
+[ext_resource type="Texture2D" uid="uid://b4kxmt0o20bq2" path="res://Textures/Textures Enviroment]/Chair/Chair_model_standardSurface1_Metallic.png" id="2_jeoqt"]
+[ext_resource type="Texture2D" uid="uid://cw2m7a7b7dbas" path="res://Textures/Textures Enviroment]/Chair/Chair_model_standardSurface1_Normal.png" id="3_3a34f"]
+[ext_resource type="Texture2D" uid="uid://d4atfe5br0c86" path="res://Textures/Textures Enviroment]/Chair/Chair_model_standardSurface1_Roughness.png" id="4_ewu8k"]
+
+[resource]
+albedo_texture = ExtResource("1_6v28w")
+metallic = 1.0
+metallic_texture = ExtResource("2_jeoqt")
+roughness_texture = ExtResource("4_ewu8k")
+normal_enabled = true
+normal_texture = ExtResource("3_3a34f")

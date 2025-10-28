@@ -1,0 +1,136 @@
+[gd_scene load_steps=14 format=3 uid="uid://dyt7b3tvt10wn"]
+
+[ext_resource type="Script" path="res://Scripts/PlayerMovement.gd" id="1_n1nje"]
+[ext_resource type="Script" path="res://Scripts/CameraCtrl3.gd" id="2_vw7tc"]
+[ext_resource type="AudioStream" uid="uid://hbhaecso12ir" path="res://SFX/Flashlight.ogg" id="3_8ok8w"]
+[ext_resource type="Texture2D" uid="uid://ckkiks8i3vg5i" path="res://UI/SprintBar.png" id="3_g7cwo"]
+[ext_resource type="ArrayMesh" uid="uid://bfxn15c2d621k" path="res://Models/Props/Flashlight.obj" id="4_23qu6"]
+[ext_resource type="AudioStream" uid="uid://pcbauy8ypdh3" path="res://SFX/walk-2.ogg" id="4_pqdpk"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_w2dgu"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_fy2kw"]
+height = 7.49745
+radius = 0.940566
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v56jy"]
+atlas = ExtResource("3_g7cwo")
+region = Rect2(-0.863724, 52.9304, 175.692, 77.5973)
+
+[sub_resource type="Animation" id="Animation_vl7sl"]
+resource_name = "Down"
+length = 3.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ColorRect:size")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(99, 24), Vector2(3, 24)]
+}
+
+[sub_resource type="Animation" id="Animation_yd1br"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ColorRect:size")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(99, 24)]
+}
+
+[sub_resource type="Animation" id="Animation_1kppc"]
+resource_name = "Up"
+length = 3.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ColorRect:size")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(4, 24), Vector2(99, 24)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_hqpk0"]
+_data = {
+"Down": SubResource("Animation_vl7sl"),
+"RESET": SubResource("Animation_yd1br"),
+"Up": SubResource("Animation_1kppc")
+}
+
+[node name="Player" type="CharacterBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.887116, 0)
+collision_mask = 7
+script = ExtResource("1_n1nje")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0386608, 0)
+shape = SubResource("CapsuleShape3D_w2dgu")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0821381, 0.873659, -0.205717)
+script = ExtResource("2_vw7tc")
+mouse_sensitivity = 0.3
+
+[node name="Light" type="SpotLight3D" parent="Camera3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.832513, -0.532627, -0.978635)
+light_energy = 5.0
+spot_range = 20.0908
+spot_angle = 21.6737
+
+[node name="Flash" type="Area3D" parent="Camera3D/Light"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Camera3D/Light/Flash"]
+transform = Transform3D(1, 0, 0, 0, 0.00680678, 0.999977, 0, -0.999977, 0.00680678, 0, 0, -3.71424)
+shape = SubResource("CylinderShape3D_fy2kw")
+
+[node name="Click" type="AudioStreamPlayer" parent="Camera3D/Light"]
+stream = ExtResource("3_8ok8w")
+volume_db = -80.0
+
+[node name="pCylinder1" type="MeshInstance3D" parent="Camera3D"]
+transform = Transform3D(0.0889315, 0, 0, 0, 0.0399337, 0.0794613, 0, -0.0794613, 0.0399337, 0.857249, -0.827156, -0.357455)
+mesh = ExtResource("4_23qu6")
+skeleton = NodePath("")
+
+[node name="SpringArm3D" type="SpringArm3D" parent="."]
+transform = Transform3D(0.999999, 0, 0, 0, 0.999999, 0, 0, 0, 0.999999, 0, 0.191849, -0.148058)
+visible = false
+spring_length = 0.1
+margin = 0.2
+
+[node name="Sprint_bar" type="CanvasLayer" parent="."]
+
+[node name="ColorRect" type="ColorRect" parent="Sprint_bar"]
+offset_left = 76.0
+offset_top = 644.0
+offset_right = 175.0
+offset_bottom = 668.0
+color = Color(0.572549, 0.827451, 0.129412, 1)
+
+[node name="SprintBar" type="Sprite2D" parent="Sprint_bar"]
+position = Vector2(94.5, 671.5)
+texture = SubResource("AtlasTexture_v56jy")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Sprint_bar"]
+libraries = {
+"": SubResource("AnimationLibrary_hqpk0")
+}
+
+[node name="Walk" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_pqdpk")
+volume_db = -80.0
+pitch_scale = 1.2

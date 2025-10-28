@@ -1,0 +1,23 @@
+[gd_resource type="StandardMaterial3D" load_steps=7 format=3 uid="uid://c4atedusunlyh"]
+
+[ext_resource type="Texture2D" uid="uid://1nbq0ct3gpcy" path="res://Textures/C-524/C-524_T-pose_Textured_Maya_body_C-524.png_BaseColor.png" id="1_0j51d"]
+[ext_resource type="Texture2D" uid="uid://bljm25xq77njt" path="res://Textures/C-524/C-524_T-pose_Textured_Maya_body_C-524.png_Emissive.png" id="2_5s036"]
+[ext_resource type="Texture2D" uid="uid://dc2ltb4psb02q" path="res://Textures/C-524/C-524_T-pose_Textured_Maya_body_C-524.png_Height.png" id="3_n8j8n"]
+[ext_resource type="Texture2D" uid="uid://b7s8tab8obl3h" path="res://Textures/C-524/C-524_T-pose_Textured_Maya_body_C-524.png_Metallic.png" id="4_1fbeu"]
+[ext_resource type="Texture2D" uid="uid://ko74ovqc4xd" path="res://Textures/C-524/C-524_T-pose_Textured_Maya_body_C-524.png_Normal.png" id="4_vnbg7"]
+[ext_resource type="Texture2D" uid="uid://b0qm3gm4rns3p" path="res://Textures/C-524/C-524_T-pose_Textured_Maya_body_C-524.png_Roughness.png" id="5_e75h5"]
+
+[resource]
+resource_name = "body1"
+cull_mode = 2
+albedo_color = Color(0.853642, 0.848006, 0.901584, 1)
+albedo_texture = ExtResource("1_0j51d")
+metallic = 1.0
+metallic_texture = ExtResource("4_1fbeu")
+roughness_texture = ExtResource("5_e75h5")
+emission_enabled = true
+emission_texture = ExtResource("2_5s036")
+normal_enabled = true
+normal_texture = ExtResource("4_vnbg7")
+heightmap_enabled = true
+heightmap_texture = ExtResource("3_n8j8n")

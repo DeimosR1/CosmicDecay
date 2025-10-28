@@ -1,0 +1,88 @@
+[gd_scene load_steps=6 format=3 uid="uid://va54ptqk520p"]
+
+[ext_resource type="Texture2D" uid="uid://b7vw2ak2c5jaj" path="res://UI/Title Screen0.2.png" id="1_t7rk6"]
+[ext_resource type="Script" path="res://Scripts/main_menu.gd" id="1_xvwb3"]
+[ext_resource type="FontFile" uid="uid://bnrielyysf7dk" path="res://Fonts/SixtyfourConvergence-Regular-VariableFont_BLED,SCAN,XELA,YELA.ttf" id="3_dem1t"]
+[ext_resource type="PackedScene" uid="uid://dh1pc40g882fx" path="res://Character_Scenes/transition.tscn" id="4_w5wqy"]
+[ext_resource type="AudioStream" uid="uid://b0xvk3u8e3yhn" path="res://SFX/Main Menu track.ogg" id="5_tobyq"]
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_xvwb3")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(28.9371, 16.4595)
+color = Color(0.0534209, 0.0534209, 0.0534209, 1)
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 3.0
+offset_right = 1282.0
+offset_bottom = 732.0
+texture = ExtResource("1_t7rk6")
+
+[node name="Start" type="Button" parent="."]
+layout_mode = 0
+offset_left = 485.0
+offset_top = 246.0
+offset_right = 796.0
+offset_bottom = 392.0
+flat = true
+
+[node name="Credits" type="Button" parent="."]
+layout_mode = 0
+offset_left = 21.0
+offset_top = 401.0
+offset_right = 469.0
+offset_bottom = 532.0
+flat = true
+
+[node name="Options" type="Button" parent="."]
+layout_mode = 0
+offset_left = 447.0
+offset_top = 564.0
+offset_right = 846.0
+offset_bottom = 647.0
+flat = true
+
+[node name="Quit" type="Button" parent="."]
+layout_mode = 0
+offset_left = 923.0
+offset_top = 404.0
+offset_right = 1195.0
+offset_bottom = 529.0
+flat = true
+
+[node name="Disclaimer" type="Label" parent="."]
+layout_mode = 0
+offset_left = 497.0
+offset_top = 645.0
+offset_right = 801.0
+offset_bottom = 718.0
+theme_override_fonts/font = ExtResource("3_dem1t")
+text = "Note: Volume is set
+ to 0 by default. 
+Increasing it
+ is recommended"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Transition" parent="." instance=ExtResource("4_w5wqy")]
+
+[node name="Background Music" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_tobyq")
+volume_db = -80.0
+autoplay = true
+
+[connection signal="pressed" from="Start" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="Credits" to="." method="_on_credits_pressed"]
+[connection signal="pressed" from="Options" to="." method="_on_options_pressed"]
+[connection signal="pressed" from="Quit" to="." method="_on_quit_pressed"]

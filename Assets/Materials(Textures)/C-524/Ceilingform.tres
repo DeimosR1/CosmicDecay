@@ -1,0 +1,17 @@
+[gd_resource type="StandardMaterial3D" load_steps=6 format=3 uid="uid://dx8mgyyk23bga"]
+
+[ext_resource type="Texture2D" uid="uid://cgela72uqkvxe" path="res://Textures/Ceiling/C-524_floor_texturing_standardSurface1_BaseColor.png" id="1_pjib6"]
+[ext_resource type="Texture2D" uid="uid://lvg1fhqlp02h" path="res://Textures/Ceiling/C-524_floor_texturing_standardSurface1_Emissive.png" id="2_51xoh"]
+[ext_resource type="Texture2D" uid="uid://c0v2ys1l0om4k" path="res://Textures/Ceiling/C-524_floor_texturing_standardSurface1_Metallic.png" id="3_4gfir"]
+[ext_resource type="Texture2D" uid="uid://c3rbq8o1vxb4w" path="res://Textures/Ceiling/C-524_floor_texturing_standardSurface1_Normal.png" id="4_f4fcv"]
+[ext_resource type="Texture2D" uid="uid://d3v0ty0obfgw3" path="res://Textures/Ceiling/C-524_floor_texturing_standardSurface1_Roughness.png" id="5_avt5a"]
+
+[resource]
+albedo_texture = ExtResource("1_pjib6")
+metallic = 1.0
+metallic_texture = ExtResource("3_4gfir")
+roughness_texture = ExtResource("5_avt5a")
+emission_enabled = true
+emission_texture = ExtResource("2_51xoh")
+normal_enabled = true
+normal_texture = ExtResource("4_f4fcv")

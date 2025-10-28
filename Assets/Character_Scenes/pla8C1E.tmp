@@ -1,0 +1,40 @@
+[gd_scene load_steps=5 format=3 uid="uid://dyt7b3tvt10wn"]
+
+[ext_resource type="Script" path="res://Scripts/3DMovement.gd" id="1_itpt3"]
+[ext_resource type="Script" path="res://Scripts/CameraCtrl3.gd" id="2_vw7tc"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_81lct"]
+height = 1.7
+radius = 0.620821
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_qynoh"]
+
+[node name="Player" type="CharacterBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.887116, 0)
+script = ExtResource("1_itpt3")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0386608, 0)
+shape = SubResource("CylinderShape3D_81lct")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0821381, 0.873659, -0.205717)
+script = ExtResource("2_vw7tc")
+mouse_sensitivity = 0.3
+
+[node name="Light" type="SpotLight3D" parent="Camera3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.760436, -0.532627, -0.978635)
+light_energy = 5.0
+spot_range = 17.5863
+spot_angle = 8.4375
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Camera3D"]
+transform = Transform3D(0.176106, 0, 0, 0, 0.0743892, 0.159623, 0, -0.159623, 0.0743892, 0.763396, -0.601532, -0.840509)
+mesh = SubResource("CylinderMesh_qynoh")
+skeleton = NodePath("../..")
+
+[node name="SpringArm3D" type="SpringArm3D" parent="."]
+transform = Transform3D(0.999999, 0, 0, 0, 0.999999, 0, 0, 0, 0.999999, 0, 0.191849, -0.148058)
+visible = false
+spring_length = 0.1
+margin = 0.2

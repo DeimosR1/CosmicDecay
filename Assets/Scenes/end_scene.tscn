@@ -1,0 +1,40 @@
+[gd_scene load_steps=6 format=3 uid="uid://ba3fmuelfscqa"]
+
+[ext_resource type="Texture2D" uid="uid://d0uochdvc4fw1" path="res://Textures/End_Scene/End_image.png" id="1_3gstc"]
+[ext_resource type="Script" path="res://Scenes/end_scene.gd" id="1_s4kwv"]
+[ext_resource type="FontFile" uid="uid://bnrielyysf7dk" path="res://Fonts/SixtyfourConvergence-Regular-VariableFont_BLED,SCAN,XELA,YELA.ttf" id="2_5euj5"]
+[ext_resource type="PackedScene" uid="uid://xwxlhsfpw6cl" path="res://Character_Scenes/transitionwhite.tscn" id="4_5yxi0"]
+
+[sub_resource type="Theme" id="Theme_rnysq"]
+
+[node name="End Scene" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_s4kwv")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(642.5, 355)
+scale = Vector2(1.33021, 1.34444)
+texture = ExtResource("1_3gstc")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 396.0
+offset_top = 56.0
+offset_right = 876.0
+offset_bottom = 668.0
+theme = SubResource("Theme_rnysq")
+theme_override_fonts/font = ExtResource("2_5euj5")
+theme_override_font_sizes/font_size = 120
+text = "GAME
+
+
+
+OVER"
+horizontal_alignment = 1
+
+[node name="Transition" parent="." instance=ExtResource("4_5yxi0")]

@@ -1,0 +1,97 @@
+[gd_scene load_steps=15 format=3 uid="uid://bt3x8mbyroro2"]
+
+[ext_resource type="Environment" uid="uid://bwjagdkd741dh" path="res://Materials(Textures)/C-524/Skybox.tres" id="1_p11xf"]
+[ext_resource type="PackedScene" uid="uid://dyt7b3tvt10wn" path="res://Character_Scenes/player.tscn" id="2_n5vr3"]
+[ext_resource type="PackedScene" uid="uid://d287p74wjogey" path="res://Character_Scenes/c_524_monsterform.tscn" id="2_usdsu"]
+[ext_resource type="PackedScene" uid="uid://b48mxueaj8nix" path="res://Character_Scenes/pause_menu.tscn" id="5_8d5f5"]
+[ext_resource type="Script" path="res://Scripts/pause_menu.gd" id="5_vouk0"]
+[ext_resource type="Script" path="res://Scripts/key.gd" id="6_fuiry"]
+[ext_resource type="PackedScene" uid="uid://ybkb72d5mn5m" path="res://Character_Scenes/collect.tscn" id="7_5q14r"]
+[ext_resource type="PackedScene" uid="uid://racn3uas4pb0" path="res://Character_Scenes/c524_ceiling.tscn" id="8_1stug"]
+[ext_resource type="PackedScene" uid="uid://dh1pc40g882fx" path="res://Character_Scenes/transition.tscn" id="9_u2kak"]
+[ext_resource type="PackedScene" uid="uid://b3id77h3w1s2o" path="res://Enviroment_scenes/Door_1.tscn" id="10_rdyyu"]
+[ext_resource type="PackedScene" uid="uid://rso0evcgqnpt" path="res://Models/Props/Props.fbx" id="11_cf7ql"]
+
+[sub_resource type="NavigationMesh" id="NavigationMesh_a6v1o"]
+vertices = PackedVector3Array(-9.5, 0.25, -9.5, -9.5, 0.25, 9.5, 9.5, 0.25, 9.5, 9.5, 0.25, -9.5)
+polygons = [PackedInt32Array(3, 2, 0), PackedInt32Array(0, 2, 1)]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_rbupa"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_182td"]
+radius = 2.0
+
+[node name="Node3D" type="Node3D"]
+transform = Transform3D(5.28808, 0, 0, 0, 5.28808, 0, 0, 0, 5.28808, 0, 0, 0)
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = ExtResource("1_p11xf")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.0958458, -0.995396, -4.35101e-08, 0, -4.37114e-08, 1, -0.995396, -0.0958458, -4.18955e-09, 0, 0, 0)
+visible = false
+light_color = Color(0.772181, 1, 0.599809, 1)
+light_energy = 0.5
+shadow_enabled = true
+
+[node name="Player" parent="." instance=ExtResource("2_n5vr3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.484, 0.756418, 0)
+
+[node name="PauseMenu" type="CanvasLayer" parent="."]
+process_mode = 3
+script = ExtResource("5_vouk0")
+
+[node name="Menu" parent="PauseMenu" instance=ExtResource("5_8d5f5")]
+visible = false
+
+[node name="C-524_monsterform" parent="." instance=ExtResource("2_usdsu")]
+
+[node name="Camera3D" type="Camera3D" parent="C-524_monsterform"]
+transform = Transform3D(0.182661, 0, -0.0489439, 0, 0.189105, 0, 0.0489439, 0, 0.182661, 0.189104, 2.45836, -0.567313)
+
+[node name="NavigationRegion3D" type="NavigationRegion3D" parent="."]
+navigation_mesh = SubResource("NavigationMesh_a6v1o")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="NavigationRegion3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 0)
+use_collision = true
+size = Vector3(20, 1, 20)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.26925, 1.13463, 0)
+script = ExtResource("6_fuiry")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.13463, 0, -6.42955)
+shape = SubResource("BoxShape3D_rbupa")
+
+[node name="CSGCylinder3D" type="CSGCylinder3D" parent="StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.567314, 0, -6.24045)
+
+[node name="Area3D" type="Area3D" parent="StaticBody3D"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D/Area3D"]
+transform = Transform3D(0.999999, 0, 0, 0, 0.999999, 0, 0, 0, 0.999999, 0.567313, 0, -6.24045)
+shape = SubResource("SphereShape3D_182td")
+
+[node name="Collect" parent="." instance=ExtResource("7_5q14r")]
+visible = false
+
+[node name="c524_ceiling_char" parent="." instance=ExtResource("8_1stug")]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, -3.21477, 1.13463, -3.40388)
+
+[node name="Transition" parent="." instance=ExtResource("9_u2kak")]
+layer = 4
+
+[node name="Door_1" parent="." instance=ExtResource("10_rdyyu")]
+transform = Transform3D(0.964433, 0, 0, 0, 0.964433, 0, 0, 0, 0.964433, -2.64746, 0.189104, 4.1603)
+
+[node name="Props" parent="." instance=ExtResource("11_cf7ql")]
+transform = Transform3D(0.189105, 0, 0, 0, 0.189105, 0, 0, 0, 0.189105, 5.29493, 0, 2.08015)
+
+[connection signal="pressed" from="PauseMenu/Menu/Resume" to="PauseMenu" method="_on_resume_pressed"]
+[connection signal="pressed" from="PauseMenu/Menu/Resume/Quit" to="PauseMenu" method="_on_quit_pressed"]
+[connection signal="body_entered" from="StaticBody3D/Area3D" to="StaticBody3D" method="_on_area_3d_body_entered"]
+[connection signal="body_exited" from="StaticBody3D/Area3D" to="StaticBody3D" method="_on_area_3d_body_exited"]
+
+[editable path="PauseMenu/Menu"]

@@ -1,0 +1,22 @@
+[gd_resource type="StandardMaterial3D" load_steps=7 format=3 uid="uid://br8hk57wf2khm"]
+
+[ext_resource type="Texture2D" path="res://Textures/C-524_T-pose_Textured_Maya_head_C-524.png_BaseColor.png" id="1_t3ug7"]
+[ext_resource type="Texture2D" path="res://Textures/C-524_T-pose_Textured_Maya_head_C-524.png_Emissive.png" id="2_w0oid"]
+[ext_resource type="Texture2D" path="res://Textures/C-524_T-pose_Textured_Maya_head_C-524.png_Height.png" id="3_65qlh"]
+[ext_resource type="Texture2D" path="res://Textures/C-524_T-pose_Textured_Maya_head_C-524.png_Metallic.png" id="4_vcp2t"]
+[ext_resource type="Texture2D" path="res://Textures/C-524_T-pose_Textured_Maya_head_C-524.png_Normal.png" id="5_1dqsp"]
+[ext_resource type="Texture2D" path="res://Textures/C-524_T-pose_Textured_Maya_head_C-524.png_Roughness.png" id="6_ludce"]
+
+[resource]
+resource_name = "head1"
+cull_mode = 2
+albedo_color = Color(0.970673, 0.979086, 0.973905, 1)
+albedo_texture = ExtResource("1_t3ug7")
+metallic = 1.0
+metallic_texture = ExtResource("4_vcp2t")
+roughness_texture = ExtResource("6_ludce")
+emission_enabled = true
+emission_texture = ExtResource("2_w0oid")
+normal_enabled = true
+normal_texture = ExtResource("5_1dqsp")
+heightmap_texture = ExtResource("3_65qlh")

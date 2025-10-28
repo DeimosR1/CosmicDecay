@@ -1,0 +1,76 @@
+[gd_scene load_steps=11 format=3 uid="uid://cs8c2it6eulau"]
+
+[ext_resource type="Environment" uid="uid://bwjagdkd741dh" path="res://Materials(Textures)/C-524/Skybox.tres" id="1_dplu7"]
+[ext_resource type="PackedScene" uid="uid://c8qwmajlulb6g" path="res://Character_Scenes/Hallway_1.tscn" id="2_dfubx"]
+[ext_resource type="Script" path="res://Scripts/pause_menu.gd" id="3_6hkrj"]
+[ext_resource type="PackedScene" uid="uid://csjon7mv5odgh" path="res://Character_Scenes/Hallway_2.tscn" id="3_naocg"]
+[ext_resource type="PackedScene" uid="uid://b48mxueaj8nix" path="res://Character_Scenes/pause_menu.tscn" id="4_nabhf"]
+[ext_resource type="PackedScene" uid="uid://bnuvsc34hlbb8" path="res://Character_Scenes/inbetweenrooms.tscn" id="5_5lcd8"]
+[ext_resource type="PackedScene" uid="uid://dyt7b3tvt10wn" path="res://Character_Scenes/player.tscn" id="5_dwqlw"]
+[ext_resource type="PackedScene" uid="uid://ybkb72d5mn5m" path="res://Character_Scenes/collect.tscn" id="5_whpmx"]
+[ext_resource type="PackedScene" uid="uid://dh1pc40g882fx" path="res://Character_Scenes/transition.tscn" id="6_q6lh6"]
+[ext_resource type="PackedScene" uid="uid://dfnuqmkkrx3c4" path="res://Character_Scenes/Classroom.tscn" id="10_2qggu"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = ExtResource("1_dplu7")
+
+[node name="Player" parent="." instance=ExtResource("5_dwqlw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 3.88712, -17)
+
+[node name="PauseMenu" type="CanvasLayer" parent="."]
+process_mode = 3
+script = ExtResource("3_6hkrj")
+
+[node name="Menu" parent="PauseMenu" instance=ExtResource("4_nabhf")]
+visible = false
+
+[node name="Collect" parent="." instance=ExtResource("5_whpmx")]
+visible = false
+
+[node name="Transition" parent="." instance=ExtResource("6_q6lh6")]
+layer = 4
+
+[node name="GeoMetry" type="Node3D" parent="."]
+
+[node name="Hallway_1" parent="GeoMetry" instance=ExtResource("2_dfubx")]
+transform = Transform3D(2.98023e-08, 0, -1, 0, 1, 0, 1, 0, 2.98023e-08, 23, 2, -23.9)
+
+[node name="Hallway_4" parent="GeoMetry" instance=ExtResource("2_dfubx")]
+transform = Transform3D(-0.999584, 0, 0.0288463, 0, 1, 0, -0.0288463, 0, -0.999584, 36.7564, 1.95373, 1.44982)
+
+[node name="Hallway_2" parent="GeoMetry" instance=ExtResource("3_naocg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.81891, 2.02336, -9.67449)
+
+[node name="Hallway_3" parent="GeoMetry" instance=ExtResource("3_naocg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.81891, 2.02336, 11.2347)
+
+[node name="Inbetweenrooms" parent="GeoMetry" instance=ExtResource("5_5lcd8")]
+transform = Transform3D(0, 0, -4.98905, 0, 4.00054, 0, 5.64561, 0, 0, 4.55253, 2, -17.4118)
+
+[node name="Inbetweenrooms2" parent="GeoMetry" instance=ExtResource("5_5lcd8")]
+transform = Transform3D(0, 0, -4.98905, 0, 4.00054, 0, 5.64561, 0, 0, 30.4236, 1.96674, -17.4118)
+
+[node name="Classroom" parent="GeoMetry" instance=ExtResource("10_2qggu")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 11.1574, 2.00254, 22.3292)
+
+[node name="Classroom2" parent="GeoMetry" instance=ExtResource("10_2qggu")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 11.1574, 2.00254, 11.2229)
+
+[node name="Classroom3" parent="GeoMetry" instance=ExtResource("10_2qggu")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 11.1574, 2.00254, 1.23329)
+
+[node name="Classroom4" parent="GeoMetry" instance=ExtResource("10_2qggu")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 11.1574, 2.00254, -9.97772)
+
+[node name="Classroom5" parent="GeoMetry" instance=ExtResource("10_2qggu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 23.0903, 2.00254, -10.9135)
+
+[node name="Classroom6" parent="GeoMetry" instance=ExtResource("10_2qggu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23.507, 2.00254, 1.88041)
+
+[connection signal="pressed" from="PauseMenu/Menu/Resume" to="PauseMenu" method="_on_resume_pressed"]
+[connection signal="pressed" from="PauseMenu/Menu/Resume/Quit" to="PauseMenu" method="_on_quit_pressed"]
+
+[editable path="PauseMenu/Menu"]

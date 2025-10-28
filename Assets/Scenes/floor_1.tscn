@@ -1,0 +1,150 @@
+[gd_scene load_steps=16 format=3 uid="uid://dpd5ki4gbh0u4"]
+
+[ext_resource type="PackedScene" uid="uid://dyt7b3tvt10wn" path="res://Character_Scenes/player.tscn" id="1_5p5my"]
+[ext_resource type="Environment" uid="uid://bwjagdkd741dh" path="res://Materials(Textures)/C-524/Skybox.tres" id="1_rtuo6"]
+[ext_resource type="Script" path="res://Scripts/pause_menu.gd" id="2_t66xs"]
+[ext_resource type="PackedScene" uid="uid://b48mxueaj8nix" path="res://Character_Scenes/pause_menu.tscn" id="3_cmqdi"]
+[ext_resource type="PackedScene" uid="uid://dh1pc40g882fx" path="res://Character_Scenes/transition.tscn" id="5_gc8x6"]
+[ext_resource type="PackedScene" uid="uid://dfnuqmkkrx3c4" path="res://Enviroment_scenes/Classroom.tscn" id="6_u1wl2"]
+[ext_resource type="PackedScene" uid="uid://csjon7mv5odgh" path="res://Enviroment_scenes/Hallway_2.tscn" id="7_b1xnx"]
+[ext_resource type="PackedScene" uid="uid://bnuvsc34hlbb8" path="res://Enviroment_scenes/inbetweenrooms.tscn" id="8_kptfn"]
+[ext_resource type="PackedScene" uid="uid://dg3xi0ym47rr4" path="res://Enviroment_scenes/Door_blocked.tscn" id="9_b4ryy"]
+[ext_resource type="PackedScene" uid="uid://dc6awhwnj4j48" path="res://Enviroment_scenes/Hallway_Windows.tscn" id="10_d4b3a"]
+[ext_resource type="PackedScene" uid="uid://ke71glk2xj7n" path="res://Enviroment_scenes/Door_Exit.tscn" id="12_mmbbo"]
+[ext_resource type="PackedScene" uid="uid://d287p74wjogey" path="res://Character_Scenes/c_524_monsterform.tscn" id="12_of5ws"]
+[ext_resource type="PackedScene" uid="uid://bwbah5ddn37bk" path="res://Character_Scenes/Key.tscn" id="13_3o18n"]
+[ext_resource type="PackedScene" uid="uid://nd1ttn6genvx" path="res://Character_Scenes/Lantern.tscn" id="14_c33uw"]
+
+[sub_resource type="NavigationMesh" id="NavigationMesh_8luvj"]
+vertices = PackedVector3Array(55.3885, 8.69163, -32.3489, 51.1385, 8.69163, -32.3489, 50.8885, 8.69163, -31.8489, 55.3885, 8.69163, -27.5989, 29.3885, 8.69163, -27.0989, 25.1385, 8.69163, -6.09887, 25.1385, 8.69163, -1.09887, 29.3885, 8.69163, 21.1511, 4.38851, 8.69163, -5.84887, 4.38851, 8.69163, -1.34887, 71.3885, 8.69163, 25.6511, 71.3885, 8.69163, 21.4011, 25.1385, 8.69163, 25.6511, 25.1385, 8.69163, -32.0989, 55.3885, 4.69163, -29.3489, 55.1385, 4.69163, -32.0989, 53.8885, 4.69163, -32.3489, 51.3885, 4.69163, -32.0989, 51.1385, 4.69163, -29.8489, 51.3885, 4.69163, -27.8489, 55.1385, 4.69163, -27.8489, 27.1385, 4.69163, 25.1511, 27.3885, 4.69163, 25.6511, 27.8885, 4.69163, 25.1511, 29.1385, 4.69163, 23.6511, 29.1385, 4.69163, 25.1511, 29.1385, 4.69163, 22.9011, 29.1385, 4.69163, 20.9011, 27.8885, 4.69163, 20.9011, 27.8885, 4.69163, -26.3489, 27.6385, 4.69163, -27.3489, 27.3885, 4.69163, -27.3489, 27.1385, 4.69163, -26.3489, 27.1385, 4.69163, -5.34887, 25.3885, 4.69163, -5.34887, 25.1385, 4.69163, -3.59887, 25.3885, 4.69163, -1.34887, 27.3885, 4.69163, -1.09887, 29.1385, 4.69163, -27.5989, 29.3885, 4.69163, -29.3489, 29.3885, 4.69163, -29.5989, 27.1385, 4.69163, -32.0989, 25.3885, 4.69163, -31.8489, 25.1385, 4.69163, -29.8489, 25.3885, 4.69163, -27.5989, 29.1385, 4.69163, -31.8489, 27.8885, 4.69163, -0.0988731, 27.6385, 4.69163, -1.09887, 27.1385, 4.69163, -0.0988731, 71.1385, 4.69163, 21.4011, 51.3885, 4.69163, 21.4011, 51.3885, 4.69163, 22.9011, 25.3885, 4.69163, 25.1511, 27.1385, 4.69163, 20.9011, 25.3885, 4.69163, 20.9011, 50.1385, 4.69163, -27.3489, 50.3885, 4.69163, -29.8489, 50.1385, 4.69163, -31.5989, 41.1385, 4.69163, -27.8489, 41.3885, 4.69163, -27.3489, 29.1385, 4.69163, 19.6511, 29.1385, 4.69163, -0.0988731, 50.1385, 4.69163, 21.4011, 30.3885, 4.69163, 21.4011, 30.3885, 4.69163, 22.9011, 50.1385, 4.69163, 23.6511, 50.3885, 4.69163, 23.1511, 27.3885, 4.69163, 19.9011, 27.6385, 4.69163, 19.9011, 25.3885, 4.69163, 19.6511, 29.1385, 4.69163, -1.34887, 29.1385, 4.69163, -5.34887, 27.6385, 4.69163, -5.59887, 25.3885, 4.69163, -0.0988731, 51.3885, 4.69163, 25.4011, 71.1385, 4.69163, 25.4011, 51.1385, 4.69163, 23.4011, 27.3885, 4.69163, -6.84887, 30.3885, 4.69163, -29.0989, 30.3885, 4.69163, -27.3489, 39.1385, 4.69163, -27.3489, 30.3885, 4.69163, 25.4011, 50.1385, 4.69163, 25.4011, 30.1385, 4.69163, 23.4011, 39.3885, 4.69163, -27.8489, 30.3885, 4.69163, -29.8489, 27.6385, 4.69163, -6.84887, 30.3885, 4.69163, -31.5989, 29.1385, 4.69163, -7.09887, 25.3885, 4.69163, -7.09887, 29.1385, 4.69163, -26.3489, 25.3885, 4.69163, -26.3489, 4.63851, 4.69163, -1.59887, 24.1385, 4.69163, -1.59887, 24.3885, 4.69163, -3.34887, 24.1385, 4.69163, -5.84887, 4.63851, 4.69163, -5.84887, 4.38851, 4.69163, -4.09887)
+polygons = [PackedInt32Array(1, 0, 2), PackedInt32Array(2, 0, 3), PackedInt32Array(5, 4, 6), PackedInt32Array(6, 4, 7), PackedInt32Array(8, 5, 9), PackedInt32Array(9, 5, 6), PackedInt32Array(11, 10, 7), PackedInt32Array(7, 10, 12), PackedInt32Array(3, 4, 2), PackedInt32Array(2, 4, 13), PackedInt32Array(6, 7, 12), PackedInt32Array(5, 13, 4), PackedInt32Array(16, 15, 14), PackedInt32Array(17, 16, 18), PackedInt32Array(18, 16, 19), PackedInt32Array(19, 16, 14), PackedInt32Array(19, 14, 20), PackedInt32Array(22, 21, 23), PackedInt32Array(23, 21, 24), PackedInt32Array(24, 25, 23), PackedInt32Array(28, 27, 26), PackedInt32Array(30, 29, 31), PackedInt32Array(31, 29, 32), PackedInt32Array(34, 33, 35), PackedInt32Array(35, 33, 36), PackedInt32Array(36, 33, 37), PackedInt32Array(30, 31, 38), PackedInt32Array(38, 31, 39), PackedInt32Array(39, 31, 40), PackedInt32Array(43, 42, 41), PackedInt32Array(45, 40, 41), PackedInt32Array(41, 40, 43), PackedInt32Array(43, 40, 31), PackedInt32Array(43, 31, 44), PackedInt32Array(47, 46, 37), PackedInt32Array(37, 46, 48), PackedInt32Array(51, 50, 49), PackedInt32Array(21, 52, 24), PackedInt32Array(24, 52, 53), PackedInt32Array(53, 52, 54), PackedInt32Array(56, 55, 57), PackedInt32Array(57, 55, 59), PackedInt32Array(57, 59, 58), PackedInt32Array(46, 61, 60), PackedInt32Array(66, 65, 62), PackedInt32Array(62, 65, 64), PackedInt32Array(62, 64, 63), PackedInt32Array(68, 67, 60), PackedInt32Array(60, 67, 69), PackedInt32Array(60, 69, 48), PackedInt32Array(60, 48, 46), PackedInt32Array(70, 47, 71), PackedInt32Array(71, 47, 72), PackedInt32Array(67, 28, 53), PackedInt32Array(53, 28, 24), PackedInt32Array(69, 73, 48), PackedInt32Array(24, 28, 26), PackedInt32Array(76, 51, 74), PackedInt32Array(74, 51, 75), PackedInt32Array(75, 51, 49), PackedInt32Array(77, 72, 33), PackedInt32Array(33, 72, 37), PackedInt32Array(37, 72, 47), PackedInt32Array(80, 79, 78), PackedInt32Array(83, 64, 81), PackedInt32Array(81, 64, 65), PackedInt32Array(81, 65, 82), PackedInt32Array(40, 85, 39), PackedInt32Array(39, 85, 78), PackedInt32Array(78, 85, 80), PackedInt32Array(80, 85, 84), PackedInt32Array(24, 26, 83), PackedInt32Array(83, 26, 64), PackedInt32Array(77, 86, 72), PackedInt32Array(85, 87, 84), PackedInt32Array(84, 87, 58), PackedInt32Array(58, 87, 57), PackedInt32Array(86, 77, 88), PackedInt32Array(88, 77, 89), PackedInt32Array(88, 89, 32), PackedInt32Array(88, 32, 29), PackedInt32Array(29, 90, 88), PackedInt32Array(65, 66, 76), PackedInt32Array(76, 66, 51), PackedInt32Array(89, 91, 32), PackedInt32Array(67, 68, 28), PackedInt32Array(97, 96, 92), PackedInt32Array(92, 96, 95), PackedInt32Array(92, 95, 94), PackedInt32Array(92, 94, 93)]
+sample_partition_type = 2
+filter_low_hanging_obstacles = true
+
+[node name="Floor1" type="Node3D"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = ExtResource("1_rtuo6")
+
+[node name="PlayerStuff" type="Node3D" parent="."]
+
+[node name="Player" parent="PlayerStuff" instance=ExtResource("1_5p5my")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.02396, 1.02639, 3.162)
+
+[node name="PauseMenu" type="CanvasLayer" parent="PlayerStuff"]
+process_mode = 3
+script = ExtResource("2_t66xs")
+
+[node name="Menu" parent="PlayerStuff/PauseMenu" instance=ExtResource("3_cmqdi")]
+visible = false
+
+[node name="Transition" parent="PlayerStuff" instance=ExtResource("5_gc8x6")]
+layer = 4
+
+[node name="Doors" type="Node3D" parent="."]
+transform = Transform3D(-5.83087e-08, 0, 1.33395, 0, 1.33395, 0, -1.33395, 0, -5.83087e-08, 53.5623, 0.0202725, -33.0474)
+
+[node name="Eviroment" type="Node3D" parent="."]
+
+[node name="Inbetweenrooms" parent="Eviroment" instance=ExtResource("8_kptfn")]
+transform = Transform3D(0, 0, -4.98905, 0, 4.00054, 0, 5.64561, 0, 0, 27.3323, -0.0329353, -3.56167)
+
+[node name="Inbetweenrooms4" parent="Eviroment" instance=ExtResource("8_kptfn")]
+transform = Transform3D(0, 0, -4.98905, 0, 4.00054, 0, 5.64561, 0, 0, 53.2691, -0.0329353, -29.9329)
+
+[node name="Inbetweenrooms2" parent="Eviroment" instance=ExtResource("8_kptfn")]
+transform = Transform3D(0, 0, -4.98905, 0, 4.00054, 0, 5.64561, 0, 0, 27.3323, -0.0329353, -29.7456)
+
+[node name="Inbetweenrooms3" parent="Eviroment" instance=ExtResource("8_kptfn")]
+transform = Transform3D(0, 0, -4.98905, 0, 4.00054, 0, 5.64561, 0, 0, 27.3323, -0.0329353, 23.0993)
+
+[node name="Hallway_2" parent="Eviroment" instance=ExtResource("7_b1xnx")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 8.88851, -0.0177231, 2.91046)
+
+[node name="Hallway_3" parent="Eviroment" instance=ExtResource("7_b1xnx")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 34.8187, -0.0177231, 29.9799)
+
+[node name="Hallway_5" parent="Eviroment" instance=ExtResource("7_b1xnx")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 55.7498, -0.0177231, 29.9799)
+
+[node name="Hallway_4" parent="Eviroment" instance=ExtResource("7_b1xnx")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 45.7592, -0.0177231, -36.1578)
+
+[node name="Door_Blocked" parent="Eviroment" instance=ExtResource("9_b4ryy")]
+transform = Transform3D(1.43395, 0, 0, 0, 1.43395, 0, 0, 0, 1.43395, 30.1545, -0.10608, -3.29359)
+
+[node name="Door_Blocked4" parent="Eviroment" instance=ExtResource("9_b4ryy")]
+transform = Transform3D(1.43395, 0, 0, 0, 1.43395, 0, 0, 0, 1.43395, 72.0825, -0.10608, 23.384)
+
+[node name="Door_Blocked2" parent="Eviroment" instance=ExtResource("9_b4ryy")]
+transform = Transform3D(-5.83087e-08, 0, 1.33395, 0, 1.33395, 0, -1.33395, 0, -5.83087e-08, 53.5623, 0.0202725, -27.5323)
+
+[node name="Door_Blocked3" parent="Eviroment" instance=ExtResource("9_b4ryy")]
+transform = Transform3D(-5.83087e-08, 0, 1.33395, 0, 1.33395, 0, -1.33395, 0, -5.83087e-08, 53.5623, 0.0202725, -33.0474)
+
+[node name="Hallway_Windows" parent="Eviroment" instance=ExtResource("10_d4b3a")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20.8172, 0, 4.18343)
+
+[node name="Hallway_Windows2" parent="Eviroment" instance=ExtResource("10_d4b3a")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20.8172, 0, -21.9368)
+
+[node name="Classroom" parent="Eviroment" instance=ExtResource("6_u1wl2")]
+
+[node name="Classroom2" parent="Eviroment" instance=ExtResource("6_u1wl2")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 8.88605, 0, -10.0517)
+
+[node name="Classroom3" parent="Eviroment" instance=ExtResource("6_u1wl2")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 19.746, 0, -10.0517)
+
+[node name="Classroom4" parent="Eviroment" instance=ExtResource("6_u1wl2")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 34.8082, 0, 17.01)
+
+[node name="Classroom5" parent="Eviroment" instance=ExtResource("6_u1wl2")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 45.9339, 0, 17.01)
+
+[node name="Classroom10" parent="Eviroment" instance=ExtResource("6_u1wl2")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 55.8089, 0, 17.01)
+
+[node name="Classroom11" parent="Eviroment" instance=ExtResource("6_u1wl2")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 66.9346, 0, 17.01)
+
+[node name="Classroom6" parent="Eviroment" instance=ExtResource("6_u1wl2")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 34.8082, 0, -23.1728)
+
+[node name="Classroom7" parent="Eviroment" instance=ExtResource("6_u1wl2")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 45.9339, 0, -23.1728)
+
+[node name="NavigationRegion3D" type="NavigationRegion3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -8.5758, 0)
+navigation_mesh = SubResource("NavigationMesh_8luvj")
+
+[node name="C-524_monsterform" parent="." instance=ExtResource("12_of5ws")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 46.8759, 0.570862, -29.5072)
+
+[node name="Props" type="Node3D" parent="."]
+
+[node name="Key" parent="Props" instance=ExtResource("13_3o18n")]
+transform = Transform3D(5.09575, 0, 0, 0, 5.09575, 0, 0, 0, 5.09575, 64.4979, 1.15042, 10.7737)
+
+[node name="pCylinder5" parent="Props" instance=ExtResource("14_c33uw")]
+transform = Transform3D(14.6991, 0, 0, 0, 14.6991, 0, 0, 0, 14.6991, -5.32077, 1.1319, -2.75434)
+
+[node name="pCylinder6" parent="Props" instance=ExtResource("14_c33uw")]
+transform = Transform3D(14.6991, 0, 0, 0, 14.6991, 0, 0, 0, 14.6991, 13.4983, 0.274109, -6.29884)
+
+[node name="pCylinder7" parent="Props" instance=ExtResource("14_c33uw")]
+transform = Transform3D(14.6991, 0, 0, 0, 14.6991, 0, 0, 0, 14.6991, 33.3165, 1.17524, -20.1434)
+
+[node name="pCylinder8" parent="Props" instance=ExtResource("14_c33uw")]
+transform = Transform3D(14.6991, 0, 0, 0, 14.6991, 0, 0, 0, 14.6991, 47.2151, 1.18088, -24.0576)
+
+[node name="pCylinder9" parent="Props" instance=ExtResource("14_c33uw")]
+transform = Transform3D(14.6991, 0, 0, 0, 14.6991, 0, 0, 0, 14.6991, 43.0471, 1.32789, 10.9256)
+
+[node name="Door_2" parent="." instance=ExtResource("12_mmbbo")]
+transform = Transform3D(1.41421, 0, 0, 0, 1.41421, 0, 0, 0, 1.41421, 56.0488, 0, -29.6549)
+
+[connection signal="pressed" from="PlayerStuff/PauseMenu/Menu/Resume" to="PlayerStuff/PauseMenu" method="_on_resume_pressed"]
+[connection signal="pressed" from="PlayerStuff/PauseMenu/Menu/Resume/Quit" to="PlayerStuff/PauseMenu" method="_on_quit_pressed"]
+
+[editable path="PlayerStuff/PauseMenu/Menu"]
