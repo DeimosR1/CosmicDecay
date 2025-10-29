@@ -1,10 +1,10 @@
 [gd_scene load_steps=44 format=4 uid="uid://b3id77h3w1s2o"]
 
-[ext_resource type="Script" path="res://Scripts/Door.gd" id="1_n5xtu"]
-[ext_resource type="Texture2D" uid="uid://y7lcpsj6bgow" path="res://Textures/Textures Enviroment]/Door_1/standardSurface1_Base_color.png" id="2_hb34l"]
-[ext_resource type="Texture2D" uid="uid://c5u6sa3edgveh" path="res://Textures/Textures Enviroment]/Door_3/standardSurface1_Normal.png" id="3_5h32s"]
-[ext_resource type="Texture2D" uid="uid://cytbdqft0t2pd" path="res://Textures/Textures Enviroment]/Door_3/standardSurface1_Metallic.png" id="4_ar50n"]
-[ext_resource type="Texture2D" uid="uid://d00pcajr8q2v0" path="res://Textures/Textures Enviroment]/Door_3/standardSurface1_Roughness.png" id="5_xy4m7"]
+[ext_resource type="Script" uid="uid://bmjaqqcrgy4k2" path="res://Assets/Scripts/Door.gd" id="1_n5xtu"]
+[ext_resource type="Texture2D" uid="uid://y7lcpsj6bgow" path="res://Assets/Textures/Textures Enviroment]/Door_1/standardSurface1_Base_color.png" id="2_hb34l"]
+[ext_resource type="Texture2D" uid="uid://c5u6sa3edgveh" path="res://Assets/Textures/Textures Enviroment]/Door_3/standardSurface1_Normal.png" id="3_5h32s"]
+[ext_resource type="Texture2D" uid="uid://cytbdqft0t2pd" path="res://Assets/Textures/Textures Enviroment]/Door_3/standardSurface1_Metallic.png" id="4_ar50n"]
+[ext_resource type="Texture2D" uid="uid://d00pcajr8q2v0" path="res://Assets/Textures/Textures Enviroment]/Door_3/standardSurface1_Roughness.png" id="5_xy4m7"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_k6xgh"]
 resource_name = "standardSurface1"

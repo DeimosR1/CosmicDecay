@@ -21,7 +21,7 @@ func _on_kill_zone_body_entered(body: Node3D) -> void:
 		anim.play("WallAttack")
 		await get_tree().create_timer(0.8).timeout
 		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
-		get_tree().change_scene_to_file("res://Scenes/game_over.tscn")
+		get_tree().change_scene_to_file("res://Assets/Scenes/game_over.tscn")
 
 
 func _on_sound_area_body_entered(body: Node3D) -> void:

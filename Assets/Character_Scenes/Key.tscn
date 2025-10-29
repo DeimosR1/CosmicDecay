@@ -1,8 +1,8 @@
 [gd_scene load_steps=7 format=4 uid="uid://bwbah5ddn37bk"]
 
-[ext_resource type="Material" uid="uid://dgogco1tbesgs" path="res://Materials(Textures)/Enviroment/Key.tres" id="1_detxb"]
-[ext_resource type="Script" path="res://Scripts/key.gd" id="2_po22w"]
-[ext_resource type="PackedScene" uid="uid://ybkb72d5mn5m" path="res://Character_Scenes/collect.tscn" id="3_5np3o"]
+[ext_resource type="Material" uid="uid://dgogco1tbesgs" path="res://Assets/Materials(Textures)/Enviroment/Key.tres" id="1_detxb"]
+[ext_resource type="Script" uid="uid://dprtw7nmfpegv" path="res://Assets/Scripts/key.gd" id="2_po22w"]
+[ext_resource type="PackedScene" uid="uid://ybkb72d5mn5m" path="res://Assets/Character_Scenes/collect.tscn" id="3_5np3o"]
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_gi2dr"]
 _surfaces = [{

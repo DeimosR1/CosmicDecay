@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c0pgirgnka621"
-path.s3tc="res://.godot/imported/wood_floor_diff_4k.png-475291affe4dd4d9358f9ead051a470f.s3tc.ctex"
+path.s3tc="res://.godot/imported/wood_floor_diff_4k.png-efe1d1e0d324968d66ac83189bbf9cef.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,14 +11,16 @@ metadata={
 
 [deps]
 
-source_file="res://Textures/Textures Enviroment]/Wood Floor/wood_floor_diff_4k.png"
-dest_files=["res://.godot/imported/wood_floor_diff_4k.png-475291affe4dd4d9358f9ead051a470f.s3tc.ctex"]
+source_file="res://Assets/Textures/Textures Enviroment]/Wood Floor/wood_floor_diff_4k.png"
+dest_files=["res://.godot/imported/wood_floor_diff_4k.png-efe1d1e0d324968d66ac83189bbf9cef.s3tc.ctex"]
 
 [params]
 
 compress/mode=2
 compress/high_quality=false
 compress/lossy_quality=0.7
+compress/uastc_level=0
+compress/rdo_quality_loss=0.0
 compress/hdr_compression=1
 compress/normal_map=0
 compress/channel_pack=0
@@ -26,6 +28,10 @@ mipmaps/generate=true
 mipmaps/limit=-1
 roughness/mode=0
 roughness/src_normal=""
+process/channel_remap/red=0
+process/channel_remap/green=1
+process/channel_remap/blue=2
+process/channel_remap/alpha=3
 process/fix_alpha_border=true
 process/premult_alpha=false
 process/normal_map_invert_y=false

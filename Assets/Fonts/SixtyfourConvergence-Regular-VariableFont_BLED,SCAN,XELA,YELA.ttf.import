@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://bnrielyysf7dk"
-path="res://.godot/imported/SixtyfourConvergence-Regular-VariableFont_BLED,SCAN,XELA,YELA.ttf-22cfbe933bd1a70691f7bcd58e4415b9.fontdata"
+path="res://.godot/imported/SixtyfourConvergence-Regular-VariableFont_BLED,SCAN,XELA,YELA.ttf-a556e62d16102c3559c2e023b0bb0cc3.fontdata"
 
 [deps]
 
-source_file="res://Fonts/SixtyfourConvergence-Regular-VariableFont_BLED,SCAN,XELA,YELA.ttf"
-dest_files=["res://.godot/imported/SixtyfourConvergence-Regular-VariableFont_BLED,SCAN,XELA,YELA.ttf-22cfbe933bd1a70691f7bcd58e4415b9.fontdata"]
+source_file="res://Assets/Fonts/SixtyfourConvergence-Regular-VariableFont_BLED,SCAN,XELA,YELA.ttf"
+dest_files=["res://.godot/imported/SixtyfourConvergence-Regular-VariableFont_BLED,SCAN,XELA,YELA.ttf-a556e62d16102c3559c2e023b0bb0cc3.fontdata"]
 
 [params]
 
@@ -21,8 +21,10 @@ msdf_pixel_range=8
 msdf_size=48
 allow_system_fallback=true
 force_autohinter=false
+modulate_color_glyphs=false
 hinting=1
 subpixel_positioning=1
+keep_rounding_remainders=true
 oversampling=0.0
 Fallbacks=null
 fallbacks=[]

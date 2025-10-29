@@ -1,12 +1,12 @@
 [gd_scene load_steps=8 format=3 uid="uid://c76j1og4qyiv6"]
 
-[ext_resource type="Texture2D" uid="uid://c8270sdqi2axa" path="res://UI/Credits_Screen.png" id="1_gprea"]
-[ext_resource type="Script" path="res://Scripts/credits.gd" id="1_w8yvl"]
-[ext_resource type="PackedScene" uid="uid://dh1pc40g882fx" path="res://Character_Scenes/transition.tscn" id="2_b3xrg"]
-[ext_resource type="Theme" uid="uid://b3nneuwfhs1um" path="res://Fonts/Credtis_theme.tres" id="2_fyllu"]
-[ext_resource type="FontFile" uid="uid://bnrielyysf7dk" path="res://Fonts/SixtyfourConvergence-Regular-VariableFont_BLED,SCAN,XELA,YELA.ttf" id="3_0w5vj"]
-[ext_resource type="Theme" uid="uid://bvecmm3xpyqbd" path="res://Fonts/CreditsText_theme.tres" id="4_0ffbn"]
-[ext_resource type="AudioStream" uid="uid://b0xvk3u8e3yhn" path="res://SFX/Main Menu track.ogg" id="7_24o4a"]
+[ext_resource type="Texture2D" uid="uid://c8270sdqi2axa" path="res://Assets/UI/Credits_Screen.png" id="1_gprea"]
+[ext_resource type="Script" uid="uid://c72xvq3xpfdyl" path="res://Assets/Scripts/credits.gd" id="1_w8yvl"]
+[ext_resource type="PackedScene" uid="uid://dh1pc40g882fx" path="res://Assets/Character_Scenes/transition.tscn" id="2_b3xrg"]
+[ext_resource type="Theme" uid="uid://b3nneuwfhs1um" path="res://Assets/Fonts/Credtis_theme.tres" id="2_fyllu"]
+[ext_resource type="FontFile" uid="uid://bnrielyysf7dk" path="res://Assets/Fonts/SixtyfourConvergence-Regular-VariableFont_BLED,SCAN,XELA,YELA.ttf" id="3_0w5vj"]
+[ext_resource type="Theme" uid="uid://bvecmm3xpyqbd" path="res://Assets/Fonts/CreditsText_theme.tres" id="4_0ffbn"]
+[ext_resource type="AudioStream" uid="uid://b0xvk3u8e3yhn" path="res://Assets/SFX/Main Menu track.ogg" id="7_24o4a"]
 
 [node name="Credits" type="Control"]
 layout_mode = 3

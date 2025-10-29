@@ -1,9 +1,9 @@
 [gd_scene load_steps=50 format=4 uid="uid://racn3uas4pb0"]
 
-[ext_resource type="Script" path="res://Scripts/c_524_ceiling.gd" id="1_g50ln"]
-[ext_resource type="AudioStream" uid="uid://6ny4rrkrdbsd" path="res://SFX/otherforms.ogg" id="2_myvce"]
-[ext_resource type="Material" uid="uid://dx8mgyyk23bga" path="res://Materials(Textures)/C-524/Ceilingform.tres" id="2_pf7r5"]
-[ext_resource type="Animation" uid="uid://c3p3itbl2wx6v" path="res://Animations/CeilingAttack.res" id="3_aclah"]
+[ext_resource type="Script" uid="uid://cyfdsskq6pb8j" path="res://Assets/Scripts/c_524_ceiling.gd" id="1_g50ln"]
+[ext_resource type="AudioStream" uid="uid://6ny4rrkrdbsd" path="res://Assets/SFX/otherforms.ogg" id="2_myvce"]
+[ext_resource type="Material" uid="uid://dx8mgyyk23bga" path="res://Assets/Materials(Textures)/C-524/Ceilingform.tres" id="2_pf7r5"]
+[ext_resource type="Animation" uid="uid://c3p3itbl2wx6v" path="res://Assets/Animations/CeilingAttack.res" id="3_aclah"]
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_vh585"]
 _surfaces = [{

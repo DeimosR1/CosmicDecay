@@ -3,21 +3,23 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cnm83q7n6xnl0"
-path="res://.godot/imported/standardSurface1_Normal.png-4694c611a4b4b554441d34e83c770c45.ctex"
+path="res://.godot/imported/standardSurface1_Normal.png-216a114bf41094496bf73b63047102f4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/Textures Enviroment]/Door_1/standardSurface1_Normal.png"
-dest_files=["res://.godot/imported/standardSurface1_Normal.png-4694c611a4b4b554441d34e83c770c45.ctex"]
+source_file="res://Assets/Textures/Textures Enviroment]/Door_1/standardSurface1_Normal.png"
+dest_files=["res://.godot/imported/standardSurface1_Normal.png-216a114bf41094496bf73b63047102f4.ctex"]
 
 [params]
 
 compress/mode=0
 compress/high_quality=false
 compress/lossy_quality=0.7
+compress/uastc_level=0
+compress/rdo_quality_loss=0.0
 compress/hdr_compression=1
 compress/normal_map=0
 compress/channel_pack=0
@@ -25,6 +27,10 @@ mipmaps/generate=false
 mipmaps/limit=-1
 roughness/mode=0
 roughness/src_normal=""
+process/channel_remap/red=0
+process/channel_remap/green=1
+process/channel_remap/blue=2
+process/channel_remap/alpha=3
 process/fix_alpha_border=true
 process/premult_alpha=false
 process/normal_map_invert_y=false

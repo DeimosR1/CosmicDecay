@@ -12,14 +12,14 @@ config_version=5
 
 config/name="Cosmic Decay"
 config/version="0.2"
-run/main_scene="res://Scenes/main_menu.tscn"
+run/main_scene="uid://va54ptqk520p"
 config/features=PackedStringArray("4.5", "Forward Plus")
 config/icon="res://UI/icon.png"
 
 [autoload]
 
-Key="*res://Scripts/key.gd"
-Ceiling="*res://Scripts/c_524_ceiling.gd"
+Key="*res://Assets/Scripts/key.gd"
+Ceiling="*res://Assets/Scripts/c_524_ceiling.gd"
 
 [display]
 

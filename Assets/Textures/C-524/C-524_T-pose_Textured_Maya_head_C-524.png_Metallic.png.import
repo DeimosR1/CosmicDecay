@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://36airf2j7cvd"
-path.s3tc="res://.godot/imported/C-524_T-pose_Textured_Maya_head_C-524.png_Metallic.png-af701fb3e4a14d1deee92b2073cd5577.s3tc.ctex"
+path.s3tc="res://.godot/imported/C-524_T-pose_Textured_Maya_head_C-524.png_Metallic.png-75028ed420c3f43132c448ec7f38a2ed.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,14 +11,16 @@ metadata={
 
 [deps]
 
-source_file="res://Textures/C-524/C-524_T-pose_Textured_Maya_head_C-524.png_Metallic.png"
-dest_files=["res://.godot/imported/C-524_T-pose_Textured_Maya_head_C-524.png_Metallic.png-af701fb3e4a14d1deee92b2073cd5577.s3tc.ctex"]
+source_file="res://Assets/Textures/C-524/C-524_T-pose_Textured_Maya_head_C-524.png_Metallic.png"
+dest_files=["res://.godot/imported/C-524_T-pose_Textured_Maya_head_C-524.png_Metallic.png-75028ed420c3f43132c448ec7f38a2ed.s3tc.ctex"]
 
 [params]
 
 compress/mode=2
 compress/high_quality=false
 compress/lossy_quality=0.7
+compress/uastc_level=0
+compress/rdo_quality_loss=0.0
 compress/hdr_compression=1
 compress/normal_map=0
 compress/channel_pack=0
@@ -26,6 +28,10 @@ mipmaps/generate=true
 mipmaps/limit=-1
 roughness/mode=0
 roughness/src_normal=""
+process/channel_remap/red=0
+process/channel_remap/green=1
+process/channel_remap/blue=2
+process/channel_remap/alpha=3
 process/fix_alpha_border=true
 process/premult_alpha=false
 process/normal_map_invert_y=false

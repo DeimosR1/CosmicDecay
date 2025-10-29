@@ -7,7 +7,7 @@ extends Node3D
 func _physics_process(delta: float) -> void:
 	if Input.is_action_just_released("Select") and inside and Key.key:
 		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
-		get_tree().change_scene_to_file("res://Scenes/end_scene.tscn")
+		get_tree().change_scene_to_file("res://Assets/Scenes/end_scene.tscn")
 	elif Input.is_action_just_released("Select") and inside:
 		nokeys.show()
 		appear.hide()

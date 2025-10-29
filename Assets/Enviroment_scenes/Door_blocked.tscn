@@ -1,6 +1,4 @@
-[gd_scene load_steps=32 format=4 uid="uid://dg3xi0ym47rr4"]
-
-[ext_resource type="Script" path="res://Scripts/Door.gd" id="1_ojajp"]
+[gd_scene load_steps=31 format=4 uid="uid://dg3xi0ym47rr4"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_r1eaj"]
 resource_name = "standardSurface1"
@@ -478,7 +476,6 @@ shadow_mesh = SubResource("ArrayMesh_cbjfd")
 size = Vector3(0.147949, 2.59055, 1.01941)
 
 [node name="Door_2" type="Node3D"]
-script = ExtResource("1_ojajp")
 
 [node name="Door_Pivot" type="Node3D" parent="."]
 

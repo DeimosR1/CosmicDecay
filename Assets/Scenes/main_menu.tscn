@@ -1,10 +1,10 @@
 [gd_scene load_steps=6 format=3 uid="uid://va54ptqk520p"]
 
-[ext_resource type="Texture2D" uid="uid://b7vw2ak2c5jaj" path="res://UI/Title Screen0.2.png" id="1_t7rk6"]
-[ext_resource type="Script" path="res://Scripts/main_menu.gd" id="1_xvwb3"]
-[ext_resource type="FontFile" uid="uid://bnrielyysf7dk" path="res://Fonts/SixtyfourConvergence-Regular-VariableFont_BLED,SCAN,XELA,YELA.ttf" id="3_dem1t"]
-[ext_resource type="PackedScene" uid="uid://dh1pc40g882fx" path="res://Character_Scenes/transition.tscn" id="4_w5wqy"]
-[ext_resource type="AudioStream" uid="uid://b0xvk3u8e3yhn" path="res://SFX/Main Menu track.ogg" id="5_tobyq"]
+[ext_resource type="Texture2D" uid="uid://b7vw2ak2c5jaj" path="res://Assets/UI/Title Screen0.2.png" id="1_t7rk6"]
+[ext_resource type="Script" uid="uid://d0egcil4578n" path="res://Assets/Scripts/main_menu.gd" id="1_xvwb3"]
+[ext_resource type="FontFile" uid="uid://bnrielyysf7dk" path="res://Assets/Fonts/SixtyfourConvergence-Regular-VariableFont_BLED,SCAN,XELA,YELA.ttf" id="3_dem1t"]
+[ext_resource type="PackedScene" uid="uid://dh1pc40g882fx" path="res://Assets/Character_Scenes/transition.tscn" id="4_w5wqy"]
+[ext_resource type="AudioStream" uid="uid://b0xvk3u8e3yhn" path="res://Assets/SFX/Main Menu track.ogg" id="5_tobyq"]
 
 [node name="MainMenu" type="Control"]
 layout_mode = 3

@@ -1,8 +1,8 @@
 [gd_scene load_steps=111 format=4 uid="uid://ci8i0l1cy1ake"]
 
-[ext_resource type="Script" path="res://Scripts/c_524_wall.gd" id="1_dnf5s"]
-[ext_resource type="Material" uid="uid://dqwdb1hwtwq5n" path="res://Materials(Textures)/Enviroment/Wallform.tres" id="3_dlgam"]
-[ext_resource type="AudioStream" uid="uid://6ny4rrkrdbsd" path="res://SFX/otherforms.ogg" id="4_4nerb"]
+[ext_resource type="Script" uid="uid://coxca71xxbi5i" path="res://Assets/Scripts/c_524_wall.gd" id="1_dnf5s"]
+[ext_resource type="Material" uid="uid://dqwdb1hwtwq5n" path="res://Assets/Materials(Textures)/Enviroment/Wallform.tres" id="3_dlgam"]
+[ext_resource type="AudioStream" uid="uid://6ny4rrkrdbsd" path="res://Assets/SFX/otherforms.ogg" id="4_4nerb"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_kkad6"]
 size = Vector3(6.88879, 5.56842, 5)

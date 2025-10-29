@@ -1,6 +1,6 @@
 [gd_scene load_steps=38 format=4 uid="uid://cmytihftitpd0"]
 
-[ext_resource type="Script" path="res://Scripts/Door.gd" id="1_udl7l"]
+[ext_resource type="Script" uid="uid://bmjaqqcrgy4k2" path="res://Assets/Scripts/Door.gd" id="1_udl7l"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_r1eaj"]
 resource_name = "standardSurface1"

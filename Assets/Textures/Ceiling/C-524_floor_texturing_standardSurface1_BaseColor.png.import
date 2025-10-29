@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cgela72uqkvxe"
-path.s3tc="res://.godot/imported/C-524_floor_texturing_standardSurface1_BaseColor.png-801669dedce8a182451a8b3e7ad38b56.s3tc.ctex"
+path.s3tc="res://.godot/imported/C-524_floor_texturing_standardSurface1_BaseColor.png-c8cdd33b6b4ff4be2173c55c7e873b27.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,14 +11,16 @@ metadata={
 
 [deps]
 
-source_file="res://Textures/Ceiling/C-524_floor_texturing_standardSurface1_BaseColor.png"
-dest_files=["res://.godot/imported/C-524_floor_texturing_standardSurface1_BaseColor.png-801669dedce8a182451a8b3e7ad38b56.s3tc.ctex"]
+source_file="res://Assets/Textures/Ceiling/C-524_floor_texturing_standardSurface1_BaseColor.png"
+dest_files=["res://.godot/imported/C-524_floor_texturing_standardSurface1_BaseColor.png-c8cdd33b6b4ff4be2173c55c7e873b27.s3tc.ctex"]
 
 [params]
 
 compress/mode=2
 compress/high_quality=false
 compress/lossy_quality=0.7
+compress/uastc_level=0
+compress/rdo_quality_loss=0.0
 compress/hdr_compression=1
 compress/normal_map=0
 compress/channel_pack=0
@@ -26,6 +28,10 @@ mipmaps/generate=true
 mipmaps/limit=-1
 roughness/mode=0
 roughness/src_normal=""
+process/channel_remap/red=0
+process/channel_remap/green=1
+process/channel_remap/blue=2
+process/channel_remap/alpha=3
 process/fix_alpha_border=true
 process/premult_alpha=false
 process/normal_map_invert_y=false

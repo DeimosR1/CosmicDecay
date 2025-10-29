@@ -1,11 +1,11 @@
 [gd_scene load_steps=14 format=3 uid="uid://dyt7b3tvt10wn"]
 
-[ext_resource type="Script" path="res://Scripts/PlayerMovement.gd" id="1_n1nje"]
-[ext_resource type="Script" path="res://Scripts/CameraCtrl3.gd" id="2_vw7tc"]
-[ext_resource type="AudioStream" uid="uid://hbhaecso12ir" path="res://SFX/Flashlight.ogg" id="3_8ok8w"]
-[ext_resource type="Texture2D" uid="uid://ckkiks8i3vg5i" path="res://UI/SprintBar.png" id="3_g7cwo"]
-[ext_resource type="ArrayMesh" uid="uid://bfxn15c2d621k" path="res://Models/Props/Flashlight.obj" id="4_23qu6"]
-[ext_resource type="AudioStream" uid="uid://pcbauy8ypdh3" path="res://SFX/walk-2.ogg" id="4_pqdpk"]
+[ext_resource type="Script" uid="uid://dn1b4obim13na" path="res://Assets/Scripts/PlayerMovement.gd" id="1_n1nje"]
+[ext_resource type="Script" uid="uid://b4pgfqjj6x8vb" path="res://Assets/Scripts/CameraCtrl3.gd" id="2_vw7tc"]
+[ext_resource type="AudioStream" uid="uid://hbhaecso12ir" path="res://Assets/SFX/Flashlight.ogg" id="3_8ok8w"]
+[ext_resource type="Texture2D" uid="uid://ckkiks8i3vg5i" path="res://Assets/UI/SprintBar.png" id="3_g7cwo"]
+[ext_resource type="ArrayMesh" uid="uid://bfxn15c2d621k" path="res://Assets/Models/Props/Flashlight.obj" id="4_23qu6"]
+[ext_resource type="AudioStream" uid="uid://pcbauy8ypdh3" path="res://Assets/SFX/walk-2.ogg" id="4_pqdpk"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_w2dgu"]
 

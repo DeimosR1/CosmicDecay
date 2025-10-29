@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://hbhaecso12ir"
-path="res://.godot/imported/Flashlight.ogg-306d84b63c210d142a316440fbec3114.oggvorbisstr"
+path="res://.godot/imported/Flashlight.ogg-918df76d1563b5227a105a31e34b35e9.oggvorbisstr"
 
 [deps]
 
-source_file="res://SFX/Flashlight.ogg"
-dest_files=["res://.godot/imported/Flashlight.ogg-306d84b63c210d142a316440fbec3114.oggvorbisstr"]
+source_file="res://Assets/SFX/Flashlight.ogg"
+dest_files=["res://.godot/imported/Flashlight.ogg-918df76d1563b5227a105a31e34b35e9.oggvorbisstr"]
 
 [params]
 

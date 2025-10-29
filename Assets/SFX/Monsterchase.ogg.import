@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://ds8jelbou74h"
-path="res://.godot/imported/Monsterchase.ogg-ca5482899a2345bea77a64c88b93d816.oggvorbisstr"
+path="res://.godot/imported/Monsterchase.ogg-725b8a274520a3b2ed648097e5ba7d9a.oggvorbisstr"
 
 [deps]
 
-source_file="res://SFX/Monsterchase.ogg"
-dest_files=["res://.godot/imported/Monsterchase.ogg-ca5482899a2345bea77a64c88b93d816.oggvorbisstr"]
+source_file="res://Assets/SFX/Monsterchase.ogg"
+dest_files=["res://.godot/imported/Monsterchase.ogg-725b8a274520a3b2ed648097e5ba7d9a.oggvorbisstr"]
 
 [params]
 

@@ -1,7 +1,7 @@
 extends CharacterBody3D
 
 @onready var goal = Vector3.ZERO
-@onready var player = get_node("/root/Node3D/Player")
+@onready var player = get_node("/root/Node3D/PlayerStuff/Player")
 @onready var navigation_agent_3d: NavigationAgent3D = $NavigationAgent3D
 @onready var target = null
 @onready var p_goal = Vector3(0,10,0)
@@ -66,11 +66,11 @@ func _physics_process(delta: float) -> void:
 		Ceiling.call = false
 		
 	if target != null:
-		velocity = direction * 2
+		velocity = direction * 4
 		look_at(global_transform.origin + velocity)
 		#print (velocity)
 	else:
-		velocity = direction
+		velocity = direction * 2
 		anim.play("C-524Monster/C-524Walk")
 		look_at(global_transform.origin + velocity)
 	move_and_slide()
@@ -82,4 +82,4 @@ func _on_deathzone_body_entered(body: Node3D) -> void:
 		velocity = velocity * 0
 		await get_tree().create_timer(3).timeout
 		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
-		get_tree().change_scene_to_file("res://Scenes/game_over.tscn")
+		get_tree().change_scene_to_file("res://Assets/Scenes/game_over.tscn")

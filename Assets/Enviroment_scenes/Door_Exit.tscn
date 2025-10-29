@@ -1,10 +1,10 @@
 [gd_scene load_steps=38 format=4 uid="uid://ke71glk2xj7n"]
 
-[ext_resource type="Script" path="res://Scripts/door_exit.gd" id="1_352yg"]
-[ext_resource type="Material" uid="uid://cbmr5k70rvt4x" path="res://Materials(Textures)/Enviroment/Desk_School.tres" id="2_h3i6q"]
-[ext_resource type="Material" uid="uid://c7p1s0m0msrag" path="res://Materials(Textures)/Enviroment/Door_Handles_Hinges.tres" id="3_uf2kk"]
-[ext_resource type="PackedScene" uid="uid://ybkb72d5mn5m" path="res://Character_Scenes/collect.tscn" id="4_7hhi3"]
-[ext_resource type="Theme" uid="uid://m70pqb8xi5pr" path="res://Fonts/Options.tres" id="5_8nrcp"]
+[ext_resource type="Script" uid="uid://c5b4658e1pilq" path="res://Assets/Scripts/door_exit.gd" id="1_352yg"]
+[ext_resource type="Material" uid="uid://cbmr5k70rvt4x" path="res://Assets/Materials(Textures)/Enviroment/Desk_School.tres" id="2_h3i6q"]
+[ext_resource type="Material" uid="uid://c7p1s0m0msrag" path="res://Assets/Materials(Textures)/Enviroment/Door_Handles_Hinges.tres" id="3_uf2kk"]
+[ext_resource type="PackedScene" uid="uid://ybkb72d5mn5m" path="res://Assets/Character_Scenes/collect.tscn" id="4_7hhi3"]
+[ext_resource type="Theme" uid="uid://m70pqb8xi5pr" path="res://Assets/Fonts/Options.tres" id="5_8nrcp"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_r1eaj"]
 resource_name = "standardSurface1"

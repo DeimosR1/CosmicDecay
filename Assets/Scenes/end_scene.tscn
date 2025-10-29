@@ -1,9 +1,9 @@
 [gd_scene load_steps=6 format=3 uid="uid://ba3fmuelfscqa"]
 
-[ext_resource type="Texture2D" uid="uid://d0uochdvc4fw1" path="res://Textures/End_Scene/End_image.png" id="1_3gstc"]
-[ext_resource type="Script" path="res://Scenes/end_scene.gd" id="1_s4kwv"]
-[ext_resource type="FontFile" uid="uid://bnrielyysf7dk" path="res://Fonts/SixtyfourConvergence-Regular-VariableFont_BLED,SCAN,XELA,YELA.ttf" id="2_5euj5"]
-[ext_resource type="PackedScene" uid="uid://xwxlhsfpw6cl" path="res://Character_Scenes/transitionwhite.tscn" id="4_5yxi0"]
+[ext_resource type="Texture2D" uid="uid://d0uochdvc4fw1" path="res://Assets/Textures/End_Scene/End_image.png" id="1_3gstc"]
+[ext_resource type="Script" uid="uid://he8ld7y6gujk" path="res://Assets/Scripts/end_scene.gd" id="1_s4kwv"]
+[ext_resource type="FontFile" uid="uid://bnrielyysf7dk" path="res://Assets/Fonts/SixtyfourConvergence-Regular-VariableFont_BLED,SCAN,XELA,YELA.ttf" id="2_5euj5"]
+[ext_resource type="PackedScene" uid="uid://xwxlhsfpw6cl" path="res://Assets/Character_Scenes/transitionwhite.tscn" id="4_5yxi0"]
 
 [sub_resource type="Theme" id="Theme_rnysq"]
 

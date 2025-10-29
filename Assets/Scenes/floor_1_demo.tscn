@@ -1,23 +1,23 @@
 [gd_scene load_steps=21 format=3 uid="uid://cvhkvov36buv6"]
 
-[ext_resource type="Environment" uid="uid://bwjagdkd741dh" path="res://Materials(Textures)/C-524/Skybox.tres" id="1_1biox"]
-[ext_resource type="PackedScene" uid="uid://dyt7b3tvt10wn" path="res://Character_Scenes/player.tscn" id="2_4goa1"]
-[ext_resource type="Script" path="res://Scripts/pause_menu.gd" id="3_nfh7g"]
-[ext_resource type="PackedScene" uid="uid://b48mxueaj8nix" path="res://Character_Scenes/pause_menu.tscn" id="4_ub8q3"]
-[ext_resource type="PackedScene" uid="uid://dh1pc40g882fx" path="res://Character_Scenes/transition.tscn" id="5_7hd1q"]
-[ext_resource type="PackedScene" uid="uid://bnuvsc34hlbb8" path="res://Enviroment_scenes/inbetweenrooms.tscn" id="6_k03ll"]
-[ext_resource type="PackedScene" uid="uid://csjon7mv5odgh" path="res://Enviroment_scenes/Hallway_2.tscn" id="7_am0wo"]
-[ext_resource type="PackedScene" uid="uid://dg3xi0ym47rr4" path="res://Enviroment_scenes/Door_blocked.tscn" id="8_625ey"]
-[ext_resource type="PackedScene" uid="uid://dc6awhwnj4j48" path="res://Enviroment_scenes/Hallway_Windows.tscn" id="9_bhon0"]
-[ext_resource type="PackedScene" uid="uid://dfnuqmkkrx3c4" path="res://Enviroment_scenes/Classroom.tscn" id="10_gfjtu"]
-[ext_resource type="PackedScene" uid="uid://d287p74wjogey" path="res://Character_Scenes/c_524_monsterform.tscn" id="11_by35i"]
-[ext_resource type="PackedScene" uid="uid://bwbah5ddn37bk" path="res://Character_Scenes/Key.tscn" id="12_kadf3"]
-[ext_resource type="PackedScene" uid="uid://nd1ttn6genvx" path="res://Character_Scenes/Lantern.tscn" id="13_rpqx3"]
-[ext_resource type="PackedScene" uid="uid://ke71glk2xj7n" path="res://Enviroment_scenes/Door_Exit.tscn" id="14_ufehb"]
-[ext_resource type="PackedScene" uid="uid://racn3uas4pb0" path="res://Character_Scenes/c524_ceiling.tscn" id="15_b2yco"]
-[ext_resource type="Script" path="res://Scripts/c_524_wall.gd" id="16_o6ywa"]
-[ext_resource type="PackedScene" uid="uid://ci8i0l1cy1ake" path="res://Character_Scenes/c524_wall.tscn" id="17_4us01"]
-[ext_resource type="Texture2D" uid="uid://bkkj5m0nhhv3j" path="res://Textures/Sky/CosmolSky.png" id="18_e8gpx"]
+[ext_resource type="Environment" uid="uid://bwjagdkd741dh" path="res://Assets/Materials(Textures)/C-524/Skybox.tres" id="1_1biox"]
+[ext_resource type="PackedScene" uid="uid://dyt7b3tvt10wn" path="res://Assets/Character_Scenes/player.tscn" id="2_4goa1"]
+[ext_resource type="Script" uid="uid://omc2rchqk4r1" path="res://Assets/Scripts/pause_menu.gd" id="3_nfh7g"]
+[ext_resource type="PackedScene" uid="uid://b48mxueaj8nix" path="res://Assets/Character_Scenes/pause_menu.tscn" id="4_ub8q3"]
+[ext_resource type="PackedScene" uid="uid://dh1pc40g882fx" path="res://Assets/Character_Scenes/transition.tscn" id="5_7hd1q"]
+[ext_resource type="PackedScene" uid="uid://bnuvsc34hlbb8" path="res://Assets/Enviroment_scenes/inbetweenrooms.tscn" id="6_k03ll"]
+[ext_resource type="PackedScene" uid="uid://csjon7mv5odgh" path="res://Assets/Enviroment_scenes/Hallway_2.tscn" id="7_am0wo"]
+[ext_resource type="PackedScene" uid="uid://dg3xi0ym47rr4" path="res://Assets/Enviroment_scenes/Door_blocked.tscn" id="8_625ey"]
+[ext_resource type="PackedScene" uid="uid://dc6awhwnj4j48" path="res://Assets/Enviroment_scenes/Hallway_Windows.tscn" id="9_bhon0"]
+[ext_resource type="PackedScene" uid="uid://dfnuqmkkrx3c4" path="res://Assets/Enviroment_scenes/Classroom.tscn" id="10_gfjtu"]
+[ext_resource type="PackedScene" uid="uid://d287p74wjogey" path="res://Assets/Character_Scenes/c_524_monsterform.tscn" id="11_by35i"]
+[ext_resource type="PackedScene" uid="uid://bwbah5ddn37bk" path="res://Assets/Character_Scenes/Key.tscn" id="12_kadf3"]
+[ext_resource type="PackedScene" uid="uid://nd1ttn6genvx" path="res://Assets/Character_Scenes/Lantern.tscn" id="13_rpqx3"]
+[ext_resource type="PackedScene" uid="uid://ke71glk2xj7n" path="res://Assets/Enviroment_scenes/Door_Exit.tscn" id="14_ufehb"]
+[ext_resource type="PackedScene" uid="uid://racn3uas4pb0" path="res://Assets/Character_Scenes/c524_ceiling.tscn" id="15_b2yco"]
+[ext_resource type="Script" uid="uid://coxca71xxbi5i" path="res://Assets/Scripts/c_524_wall.gd" id="16_o6ywa"]
+[ext_resource type="PackedScene" uid="uid://ci8i0l1cy1ake" path="res://Assets/Character_Scenes/c524_wall.tscn" id="17_4us01"]
+[ext_resource type="Texture2D" uid="uid://bkkj5m0nhhv3j" path="res://Assets/Textures/Sky/CosmolSky.png" id="18_e8gpx"]
 
 [sub_resource type="NavigationMesh" id="NavigationMesh_s1e8s"]
 vertices = PackedVector3Array(30.3516, 0.5, -28.7716, 30.3516, 0.5, -30.5216, 28.6016, 0.5, -30.5216, 28.3516, 0.5, -28.5216, 26.8516, 0.5, -4.7716, 28.1016, 0.5, -4.7716, 26.6016, 0.5, -32.0216, 28.3516, 0.5, -32.0216, 56.6016, 0.5, -28.7716, 56.6016, 0.5, -30.5216, 26.8516, 0.5, -2.2716, 28.1016, 0.5, -2.2716, 29.1016, 0.5, -2.5216, 29.1016, 0.5, -4.5216, 4.35155, 0.5, -4.5216, 4.35155, 0.5, -3.0216, 26.6016, 0.5, 24.9784, 28.3516, 0.5, 24.9784, 28.6016, 0.5, 23.9784, 28.3516, 0.5, 21.7284, 30.6016, 0.5, 23.9784, 30.6016, 0.5, 21.9784, 71.3515, 0.5, 23.9784, 71.3515, 0.5, 21.9784)
@@ -41,6 +41,13 @@ script = ExtResource("3_nfh7g")
 
 [node name="Menu" parent="PlayerStuff/PauseMenu" instance=ExtResource("4_ub8q3")]
 visible = false
+
+[node name="Resume" parent="PlayerStuff/PauseMenu/Menu" index="1"]
+layout_mode = 0
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 978.0
+offset_bottom = 228.0
 
 [node name="Transition" parent="PlayerStuff" instance=ExtResource("5_7hd1q")]
 layer = 4

@@ -1,9 +1,10 @@
-[gd_scene load_steps=35 format=4 uid="uid://cc5syudttfg85"]
+[gd_scene load_steps=36 format=4 uid="uid://cc5syudttfg85"]
 
-[ext_resource type="Texture2D" uid="uid://cwetoyie55vwv" path="res://Textures/Textures Enviroment]/Door_3/standardSurface1_Base_color.png" id="1_jcr22"]
-[ext_resource type="Texture2D" uid="uid://cytbdqft0t2pd" path="res://Textures/Textures Enviroment]/Door_3/standardSurface1_Metallic.png" id="2_vjtuh"]
-[ext_resource type="Texture2D" uid="uid://c5u6sa3edgveh" path="res://Textures/Textures Enviroment]/Door_3/standardSurface1_Normal.png" id="3_adxb5"]
-[ext_resource type="Texture2D" uid="uid://d00pcajr8q2v0" path="res://Textures/Textures Enviroment]/Door_3/standardSurface1_Roughness.png" id="4_gjg1o"]
+[ext_resource type="Script" uid="uid://bmjaqqcrgy4k2" path="res://Assets/Scripts/Door.gd" id="1_bc721"]
+[ext_resource type="Texture2D" uid="uid://cwetoyie55vwv" path="res://Assets/Textures/Textures Enviroment]/Door_3/standardSurface1_Base_color.png" id="1_jcr22"]
+[ext_resource type="Texture2D" uid="uid://cytbdqft0t2pd" path="res://Assets/Textures/Textures Enviroment]/Door_3/standardSurface1_Metallic.png" id="2_vjtuh"]
+[ext_resource type="Texture2D" uid="uid://c5u6sa3edgveh" path="res://Assets/Textures/Textures Enviroment]/Door_3/standardSurface1_Normal.png" id="3_adxb5"]
+[ext_resource type="Texture2D" uid="uid://d00pcajr8q2v0" path="res://Assets/Textures/Textures Enviroment]/Door_3/standardSurface1_Roughness.png" id="4_gjg1o"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_n7ae3"]
 resource_name = "standardSurface1"
@@ -448,13 +449,14 @@ tracks/0/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_bxk50"]
 _data = {
-"Opened": SubResource("Animation_c7y46"),
-"RESET": SubResource("Animation_08esg"),
-"Take 001": SubResource("Animation_gnh00"),
-"Take 002": SubResource("Animation_b336g")
+&"Opened": SubResource("Animation_c7y46"),
+&"RESET": SubResource("Animation_08esg"),
+&"Take 001": SubResource("Animation_gnh00"),
+&"Take 002": SubResource("Animation_b336g")
 }
 
 [node name="Door_3" type="Node3D"]
+script = ExtResource("1_bc721")
 
 [node name="Door_Pivot" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.229767, 0, 0.483246)
@@ -539,5 +541,5 @@ shape = SubResource("BoxShape3D_yntb6")
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Door_Pivot"]
 root_node = NodePath("../..")
 libraries = {
-"": SubResource("AnimationLibrary_bxk50")
+&"": SubResource("AnimationLibrary_bxk50")
 }
